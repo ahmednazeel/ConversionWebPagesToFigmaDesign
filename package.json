@@ -1,0 +1,25 @@
+{
+  "name": "code.to.design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start":"concurrently \"npm run client\" \"npm run server\"",
+    "client":"npm start --prefix client",
+    "server": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "concurrently": "^9.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.1",
+    "nodemon": "^3.1.7",
+    "puppeteer": "^23.7.1"
+  }
+}
